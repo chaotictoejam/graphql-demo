@@ -4,21 +4,13 @@
 A demonstration project showcasing GraphQL implementation. This project serves as an example of how to build and structure a GraphQL API.
 
 ## Prerequisites
-- Node.js (version X.X.X)
+- Node.js
 - npm or yarn
 
 ## Installation
-1. Clone the repository:
-```bash
-git clone <repository-url>
-```
-2. Install dependencies:
+1. Clone the repository
 
-```
-npm install
-# or
-yarn install
-```
+2. Install dependencies (`npm install` or `yarn install`)
 
 ## Usage
 
