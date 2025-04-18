@@ -8,8 +8,8 @@ let users = [
     email: "alice@example.com",
     age: 30,
     posts: [
-      { id: "a", title: "Hello World", content: "My first post!" },
-      { id: "b", title: "GraphQL Tips", content: "Query what you need!" },
+      { id: "1-1", title: "Hello World", content: "My first post!" },
+      { id: "1-2", title: "GraphQL Tips", content: "Query what you need!" },
     ],
   },
   {
@@ -18,6 +18,13 @@ let users = [
     email: "bob@example.com",
     age: 25,
     posts: [],
+  },
+  {
+    id: "3",
+    name: "Summer",
+    email: "summer@example.com",
+    age: 27,
+    posts: [{ id: "3-1", title: "Feeling like spring", content: "Season's are weird" }],
   },
 ];
 
