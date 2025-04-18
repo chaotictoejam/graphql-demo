@@ -45,6 +45,7 @@ const typeDefs = gql`
   type Mutation {
     createUser(name: String!, email: String!, age: Int): User
     updateUser(id: ID!, name: String, email: String, age: Int): User
+    createPost(userId: ID!, title: String!, content: String!): Post
   }
 `;
 
@@ -73,6 +74,19 @@ const resolvers = {
       if (email) user.email = email;
       if (age) user.age = age;
       return user;
+    },
+    createPost: (_, { userId, title, content }) => {
+      const user = users.find((u) => u.id === userId);
+      if (!user) throw new Error("User not found");
+
+      const newPost = {
+        id: `${user.id}-${user.posts.length + 1}`,
+        title,
+        content,
+      };
+
+      user.posts.push(newPost);
+      return newPost;
     },
   },
 };

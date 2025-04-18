@@ -59,3 +59,13 @@ mutation {
   }
 }
 ```
+
+```graphql
+mutation {
+  createPost(userId: "1", title: "GraphQL Rocks", content: "This is my new blog post!") {
+    id
+    title
+    content
+  }
+}
+```
